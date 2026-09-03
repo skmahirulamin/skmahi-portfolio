@@ -13,7 +13,7 @@ const projects = [
     gradient: 'from-emerald-500/25 via-teal-500/15 to-cyan-500/25',
     accent: 'text-emerald-300',
     href: '#',
-    image: '/Bengal_Strikers_Gameplay_Image.png',
+    image: `${import.meta.env.BASE_URL}Bengal_Strikers_Gameplay_Image.png`,
     previewLabel: 'Gameplay Preview',
   },
   {
@@ -28,7 +28,7 @@ const projects = [
     gradient: 'from-pink-500/25 via-rose-500/15 to-fuchsia-500/25',
     accent: 'text-pink-300',
     href: '#',
-    image: '/bKash_Calc_View.png',
+    image: `${import.meta.env.BASE_URL}bKash_Calc_View.png`,
     previewLabel: 'Website Preview',
   },
   /*

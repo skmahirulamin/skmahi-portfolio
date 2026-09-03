@@ -26,25 +26,24 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        scrolled
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${scrolled
           ? 'border-b border-white/10 bg-[#08080b]/80 backdrop-blur-xl'
           : 'border-b border-transparent bg-transparent'
-      }`}
+        }`}
     >
       <nav className="section-pad mx-auto flex h-16 max-w-7xl items-center justify-between md:h-20">
         <a href="#hero" onClick={close} className="group flex items-center gap-2">
-<img
-  src="/sk-logo.png"
-  alt="SK Logo"
-  className="h-10 w-10 object-contain"
-/>
-  <div className="flex items-center gap-3">
+          <img
+            src={`${import.meta.env.BASE_URL}sk-logo.png`}
+            alt="SK Logo"
+            className="h-10 w-10 object-contain"
+          />
+          <div className="flex items-center gap-3">
 
-  <span className="text-lg font-semibold tracking-tight">
-    Sheikh Mahi
-  </span>
-</div>
+            <span className="text-lg font-semibold tracking-tight">
+              Sheikh Mahi
+            </span>
+          </div>
         </a>
 
         <ul className="hidden items-center gap-1 lg:flex">
@@ -81,9 +80,8 @@ export default function Navbar() {
 
       {/* Mobile drawer */}
       <div
-        className={`overflow-hidden border-t border-white/10 bg-[#08080b]/95 backdrop-blur-xl transition-[max-height,opacity] duration-400 lg:hidden ${
-          open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-        }`}
+        className={`overflow-hidden border-t border-white/10 bg-[#08080b]/95 backdrop-blur-xl transition-[max-height,opacity] duration-400 lg:hidden ${open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          }`}
         style={{ transitionDuration: '400ms' }}
       >
         <ul className="section-pad flex flex-col gap-1 py-4">
