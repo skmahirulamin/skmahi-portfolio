@@ -12,7 +12,7 @@ export default function YoutubeSection() {
   const [latestVideo, setLatestVideo] = useState<LatestVideo | null>(null);
 
   useEffect(() => {
-    fetch('/latest-video.json')
+    fetch(`${import.meta.env.BASE_URL}latest-video.json`)
       .then((response) => {
         if (!response.ok) {
           throw new Error('Failed to load latest video');
